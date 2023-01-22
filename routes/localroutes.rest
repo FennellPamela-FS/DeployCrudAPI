@@ -3,7 +3,7 @@ GET http://localhost:8000/series
 
 ###
 
-# GET http://localhost:8000/series/63cafba1b8644f10d4db0b1e
+GET http://localhost:8000/series/63cce5ee63722189ca188a4d
 
 
 
@@ -25,13 +25,13 @@ Content-Type: application/json
 
 ###
 
-PATCH  http://localhost:8000/series/63cafbc7b8644f10d4db0b23
+PATCH  http://localhost:8000/series/63cce70463722189ca188a55
 Content-Type: application/json
 
 {
-    "title": "New Title",
-    "description": "New Description",
-    "videolink": "https://newlink"
+    "title": "New Patch Title",
+    "description": "New Patch Description",
+    "videolink": "https://newpatchlink"
 }
 
 
