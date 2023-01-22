@@ -1,0 +1,37 @@
+GET http://localhost:8000/series
+
+
+###
+
+# GET http://localhost:8000/series/63cafba1b8644f10d4db0b1e
+
+
+
+###
+
+
+POST http://localhost:8000/series
+Content-Type: application/json
+
+{
+    "title": "Two Truths To Remember When You are Battling Depression",
+    "description": "In Peace of Mind, we will look at how some familiar names in scripture dealt with many of the same struggles we face today. We will learn how they overcame those struggles not through their own strength, but by depending on God.",
+    "videolink": "https://youtu.be/H5pQEfeFcNU"
+}
+
+###
+
+#DELETE http://localhost:8000/series/63cafbb6b8644f10d4db0b21
+
+###
+
+PATCH  http://localhost:8000/series/63cafbc7b8644f10d4db0b23
+Content-Type: application/json
+
+{
+    "title": "New Title",
+    "description": "New Description",
+    "videolink": "https://newlink"
+}
+
+

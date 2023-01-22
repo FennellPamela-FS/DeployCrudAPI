@@ -35,7 +35,9 @@ You may also see any lint errors in the console.
 ### ⚙️ Objective
 Deploy a MERN application with basic CRUD functionality
 
-**THEME:**  Single Series Replica based on Open by Life.Church
+**THEME:** A Single Series Replica based on Open by Life.Church
+- User will see a series of messages complete with title, description, and youtube video url.
+- user will be able to create, update, and delete items in the series.
 
 **Overview:** Deploy a MERN application with customized styling, structure, and server configuration which will be powered through an implementation of a RESTful API. 
 #
