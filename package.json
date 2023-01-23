@@ -1,8 +1,6 @@
 {
   "name": "deploycrudapi",
   "version": "1.0.0",
-  "description": "# Project Name: CRUD API Deployment ## 2.9 Assignment",
-  "main": "index.js",
   "engines": {
     "node": "16.15.1"
   },
