@@ -25,8 +25,6 @@ db.once('open', () => console.log('Database connected established'))
 
 app.use(express.json()); // expect json on all routes after this
 app.use('/api/v1/series', seriesRouter);
-// app.use('/series', seriesRouter);
-
 
 // static react build exists in the react build dir
 app.use(express.static(path.join(__dirname, '../reactjs/build')));
@@ -34,9 +32,9 @@ app.use(express.static(path.join(__dirname, '../reactjs/build')));
 app.get('/', (req, res) => { res.send('Message Series Express Build!') })
 
 // if route undefined by API then its a direct request to client-side route
-// app.get('/*', (req, res) => {
-res.sendFile(path.join(__dirname, '../reactjs/build', 'index.html'));
-// });
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../reactjs/build', 'index.html'));
+});
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
