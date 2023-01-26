@@ -1,38 +1,120 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Primary COLORS With # */
+/* #414c6b, #1e80c1, #5baeb7, #a5def2  */
+/* https://coolors.co/424874-dcd6f7-a6b1e1-cacfd6-d6e5e3  */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* alternate colors */
+/* #797ef6, #4adede, #1aa7ec, #1e2f97
+
+/********************************
+CSS ideas to change to styles
+
+header: {
+  backgroundColor: '#414c6b',
+  color: '#fff',
+  padding: '2em',
+},
+
+headContainer: {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  flexWrap:' wrap',
+},
+
+
+
+  navA: {
+    color: '#fff',
+    textDecoration: 'none',
+    borderBottom: 1px solid '#414c6b',
+    padding: '1em 2em',
+    display: 'flex',
+    textTransform: 'uppercase',
+  },
+
+  columns: {
+    display: 'flex',
+    width: '100%',
+    justifyContent:'space-between',
+    flexWrap: ' wrap',
+  },
+
+  item: {
+    padding: '3em',
+    maxWidth: '47%',
+    background: 'smoke',
+    color: '#414c6b',
+    borderBottom: '5px solid #797ef6',
+    marginBottom: '2em',
+    position: 'relative',
+    overflow: 'hidden',
   }
+
+  footer: {
+    color: '#414c6b',
+    padding: '2em',
+    textAlign: 'center',
+    fontSize: '2em',
+    borderTop: '1px solid #1e80c1'.
+  },
+
+*/
+
+
+  @media (min-width: 640px) { 
+    .sm {
+      font-size: 3.75rem;
+      line-height: 1;
+    }
+  }
+
+.bg-sky-500 {
+    background-color: #1aa7ec;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-white {
+    color: #fff;
+}
+
+.bg-slate-50 {
+    background-color: #a5def2;
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.items-center {
+  align-items: center
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity))
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.hover\:bg-blue-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity))
 }
