@@ -8,6 +8,8 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Series from './pages/Series';
 import List from './pages/List';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 
 function App() {
 
@@ -38,6 +40,8 @@ function App() {
       </div>
       <Header />
       <Routes>
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/signup" exact element={<SignUp />} />
         <Route path="/series/:id" exact element={<Series />} />
         <Route path="/list" exact element={<List />} />
         <Route path="/dashboard" exact element={<Dashboard />} />
