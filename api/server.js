@@ -13,6 +13,7 @@ app.use(cors());    // its ok to except cors request for this server
 const PORT = process.env.PORT || 8000;
 
 const seriesRouter = require('./routes/series');
+const authRouter = require('./routes/auth');
 
 const DATABASE_URL = process.env.DATABASE_URL;
 
@@ -25,6 +26,7 @@ db.once('open', () => console.log('Database connected established'))
 
 app.use(express.json()); // expect json on all routes after this
 app.use('/api/v1/series', seriesRouter);
+app.use('/api/v1/auth', authRouter);
 
 // static react build exists in the react build dir
 app.use(express.static(path.join(__dirname, '../reactjs/build')));

@@ -1,5 +1,10 @@
 //  series router
 const express = require('express');
+const passport = require('passport')
+
+const passportService = require('../services/passport')
+
+const protectedRoute = passport.authenticate('jwt', { session: false })
 const router = express.Router();
 
 // build our info about the series
@@ -28,7 +33,7 @@ const getSeries = async (req, res, next) => {
 
 
 // Get all series
-router.get('/', async (req, res) => {
+router.get('/', protectedRoute, async (req, res) => {
     try {
         // find everything in the series model
         const series = await Series.find();
